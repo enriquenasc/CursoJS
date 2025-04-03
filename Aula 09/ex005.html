@@ -28,6 +28,46 @@
 
       var d = window.document.querySelector("div.msg");
       d.style.background = "blue";
+
+      /*
+        O que significa a sigla DOM?
+        R: DOM (Document Object Model) é a estrutura hierárquica que representa a página HTML como um conjunto de nós e objetos, 
+        permitindo que linguagens como JavaScript manipulem dinamicamente o conteúdo, a estrutura e o estilo da página.
+        
+        O que são os elementos Parent e os elementos Child em uma árvore DOM?
+         - Parent (Elemento Pai): Um nó que contém outros nós dentro dele. Exemplo: Uma <ul> é o pai dos seus <li>.
+         - Child (Elemento Filho): Um nó que está dentro de outro nó (pai). Exemplo: Os <li> dentro de uma <ul> são seus filhos.
+
+            Exemplo:
+
+                <ul id="lista">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                </ul>
+            Aqui, <ul> é o parent, e cada <li> é um child.
+
+
+        Quais são os cincos principais métodos de selecionar elementos DOM dentro do JS?
+
+        1 - document.getElementById("id") – Seleciona um elemento pelo seu id.
+
+        2 - document.getElementsByClassName("classe") – Retorna um HTMLCollection com todos os elementos que possuem a classe especificada.
+
+        3 - document.getElementsByTagName("tag") – Retorna todos os elementos de uma determinada tag (ex: div, p).
+
+        4 - document.querySelector("seletor") – Retorna o primeiro elemento que corresponde ao seletor CSS passado.
+
+        5 - document.querySelectorAll("seletor") – Retorna uma NodeList com todos os elementos que correspondem ao seletor CSS passado.
+        
+        Exemplo prático:
+                const titulo = document.getElementById("titulo"); // Seleciona pelo ID
+                const botoes = document.getElementsByClassName("btn"); // Seleciona por classe
+                const paragrafos = document.getElementsByTagName("p"); // Seleciona por tag
+                const primeiroItem = document.querySelector(".item"); // Seleciona o primeiro item com a classe "item"
+                const todosItens = document.querySelectorAll(".item"); // Seleciona todos os itens com a classe "item"
+        Esses métodos são essenciais para manipular a estrutura e o conteúdo da página dinamicamente. 🚀        
+
+      */
     </script>
   </body>
 </html>
